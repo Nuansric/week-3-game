@@ -1,0 +1,37 @@
+body {
+	background-color: #3C8A78;
+	padding: 200px; 
+}
+
+#container{
+	min-width: 900px;
+	min-height: 600px;
+	text-align: center; 
+	background-color: #C4EFE5; 
+	border: 10px solid #ffffff; 
+	padding: 70px 100px 50px 100px; 
+	color: #ffffff;
+	line-height: 5em;
+}
+
+img {
+	margin-top: 40px;
+	width: 350px;
+	height: 350px;
+}
+
+h1, h3{
+	font-size: 45px;
+}
+
+
+#direction{
+	font-size: 30px;
+}
+
+#playWord{
+	font-size: 45px;
+}
+#alreadyGuess{
+	font-size: 45px;
+}

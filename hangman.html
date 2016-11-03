@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<div id="container" >
+	<h1>ANIMAL KINGDOM HANGMAN GAME</h1> <br><hr>
+	
+	<div id="direction">
+	<!-- Instruction -->
+	<p>When you are ready, type in your guess. Get ready to be hang!</p>
+	
+	</div>
+	
+	<div>
+		<img src="assets/images/hangman.jpg">
+	</div>
+	
+
+	<div>
+	<!-- Number of letters for words -->
+		<h3>Current Word:</h3>
+	</div>
+	
+	<div id="playWord">
+	
+		<!-- _ _ _ _ _ _ _ -->
+	</div>
+
+	<div>
+			<!-- Win Score Update -->
+			<h3>Wins: <span id="score"></span> </h3>
+			
+		</div>
+	<div>
+	<h3>Number of Guesses Remaining : <span id="remainGuess"></span> </h3>
+	</div>
+	
+	<div>
+	<!-- Show already guessed letter  -->
+	<h3>Letter Already Guessed : </h3>
+	
+	<div id="alreadyGuess"></div>
+	
+	</div>
+	
+</div>
+
+<!-- link to external CSS file -->
+
+<script type="text/javascript" src="assets/javascript/game.js" ></script>
+
+</body>
+</html>
