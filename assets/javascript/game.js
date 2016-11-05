@@ -35,9 +35,22 @@
 			// variable of Number of Guess Remaining
 			remainGuess: 12,
 
+			// Function of Winning sound
+			playwinsound: function(){
+				
+				var audioElement = document.getElementById("winSound");
+				audioElement.play();
+
+			},
+
+			// Function of Losing sound
+			playlosesound: function(){
+				
+				var audioElement = document.getElementById("loserSound");
+				audioElement.play();
+				
+			},
 		
-			
-			
 
 			// Function for the start up state
 			
@@ -113,10 +126,11 @@
 
 			},
 
-			// Function to update the score
+			// Function to play winsound and update the score
 
 			UpdateWins : function(){
 
+				hangman.playwinsound();
 				hangman.wins += 1;
 				document.querySelector("#score").innerHTML = (hangman.wins);
 
@@ -232,8 +246,9 @@
 					};
 
 				// RESTART THE GAME WITH NEW WORD WHEN USER LOSE
-					// if the remain guess is 0, user lost, the game will reset
+					// if the remain guess is 0, user lost, the game will play loser sound and reset
 				if (hangman.remainGuess < 1) {
+					hangman.playlosesound();
 					hangman.ResetGame();
 
 
@@ -256,6 +271,7 @@
 
 
 		hangman.ResetGame();
+		
 
 			
 
